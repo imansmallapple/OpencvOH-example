@@ -18,6 +18,9 @@ struct Index {
             this.message = 'Welcome';
             console.log('testTag');
             console.info('testTag', 'Test NAPI 2 + 3 = %{public}d', testNapi.add(2, 3));
+            this.getUIContext().getRouter().pushUrl({
+              url:'pages/image2Gray'
+            })
           })
       }
       .width('100%')

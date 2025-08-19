@@ -1,19 +1,33 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\chens\\.ohos\\config\\default_OpencvOH-example_wuUfzrk42WA-ierkhg1Bs47F1B35OnrHSZJLoJB3P-I=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B1E0950205FDB2187D5E3877A4043C9AE0AACE89153E8BC8088505A5A985610226B92AE0AFD6B6C",
+          "profile": "C:\\Users\\chens\\.ohos\\config\\default_OpencvOH-example_wuUfzrk42WA-ierkhg1Bs47F1B35OnrHSZJLoJB3P-I=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\chens\\.ohos\\config\\default_OpencvOH-example_wuUfzrk42WA-ierkhg1Bs47F1B35OnrHSZJLoJB3P-I=.p12",
+          "storePassword": "0000001B352D6F55ACF76103E76B5E9C3E74F20210D040DD5E4F3D256E9E949C369086B46C8958EB7E6E73"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
         "signingConfig": "default",
-        "targetSdkVersion": "5.1.0(18)",
-        "compatibleSdkVersion": "5.1.0(18)",
-        "runtimeOS": "HarmonyOS",
+        "runtimeOS": "OpenHarmony",
         "buildOption": {
           "strictMode": {
             "caseSensitiveCheck": true,
             "useNormalizedOHMUrl": true
           }
-        }
+        },
+        "compileSdkVersion": 18,
+        "compatibleSdkVersion": 18
       }
     ],
     "buildModeSet": [
